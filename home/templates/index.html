@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{%block title%}Home{%endblock title%}
+{%block content%}
+<h1>{%if request.user.is_authenticated %} Welcome {{ request.user}} {% else%} Welcome{% endif%}</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, perspiciatis totam ut quia rerum ducimus
+    voluptate fuga expedita illo nisi cum molestiae ipsa architecto! Tempore sit eius dicta fugiat voluptas.</p>
+{%endblock content%}
